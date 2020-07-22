@@ -386,22 +386,62 @@ public class Calc extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        String display = jTextField1.getText();
+        if (display.isEmpty()) {
+            return;
+        }
+
+        resposta = Double.parseDouble(display);
+        jTextField1.setText("");
+        operacao = "^";
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
+        String display = jTextField1.getText();
+        if (display.isEmpty()) {
+            return;
+        }
+
+        resposta = Double.parseDouble(display);
+        jTextField1.setText("");
+        operacao = "-";
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
+        String display = jTextField1.getText();
+        if (display.isEmpty()) {
+            return;
+        }
+
+        resposta = Double.parseDouble(display);
+        jTextField1.setText("");
+        operacao = "+";
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
+        String display = jTextField1.getText();
+        if (display.isEmpty()) {
+            return;
+        }
+
+        resposta = Double.parseDouble(display);
+        jTextField1.setText("");
+        operacao = "/";
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
+        String display = jTextField1.getText();
+        if (display.isEmpty()) {
+            return;
+        }
+
+        resposta = Double.parseDouble(display);
+        jTextField1.setText("");
+        operacao = "*";
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
@@ -436,7 +476,7 @@ public class Calc extends javax.swing.JFrame {
                 break;
                 
             case "^":
-                resposta /= valor;
+                resposta = Math.pow(valor, 2);
                 break;
         }
         
